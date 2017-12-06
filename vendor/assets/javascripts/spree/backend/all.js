@@ -13,7 +13,6 @@
 
 //= require spree/backend/spree_admin_roles_and_access
 //= require spree/backend/spree_themes
-//= require spree/backend/spree_loyalty_points
 //= require spree/backend/spree_marketing
 //= require spree/backend/spree_events_tracker
 //= require spree/backend/spree_admin_insights
