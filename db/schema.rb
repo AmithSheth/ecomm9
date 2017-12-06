@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171114135718) do
+ActiveRecord::Schema.define(version: 20171204095622) do
 
   create_table "connections", force: :cascade do |t|
     t.integer  "Sequence_Number"
@@ -138,6 +138,40 @@ ActiveRecord::Schema.define(version: 20171114135718) do
     t.index ["id", "type"], name: "index_spree_calculators_on_id_and_type"
   end
 
+  create_table "spree_cart_events", force: :cascade do |t|
+    t.string   "actor_type"
+    t.integer  "actor_id"
+    t.string   "target_type"
+    t.integer  "target_id"
+    t.string   "activity"
+    t.text     "referrer"
+    t.integer  "quantity"
+    t.decimal  "total",       precision: 16, scale: 4
+    t.string   "session_id"
+    t.integer  "variant_id"
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
+    t.index ["actor_type", "actor_id"], name: "index_spree_cart_events_on_actor_type_and_actor_id"
+    t.index ["target_type", "target_id"], name: "index_spree_cart_events_on_target_type_and_target_id"
+    t.index ["variant_id"], name: "index_spree_cart_events_on_variant_id"
+  end
+
+  create_table "spree_checkout_events", force: :cascade do |t|
+    t.string   "actor_type"
+    t.integer  "actor_id"
+    t.string   "target_type"
+    t.integer  "target_id"
+    t.string   "activity"
+    t.text     "referrer"
+    t.string   "previous_state"
+    t.string   "next_state"
+    t.string   "session_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.index ["actor_type", "actor_id"], name: "index_spree_checkout_events_on_actor_type_and_actor_id"
+    t.index ["target_type", "target_id"], name: "index_spree_checkout_events_on_target_type_and_target_id"
+  end
+
   create_table "spree_countries", force: :cascade do |t|
     t.string   "iso_name"
     t.string   "iso"
@@ -247,6 +281,79 @@ ActiveRecord::Schema.define(version: 20171114135718) do
     t.index ["source_id", "source_type"], name: "index_spree_log_entries_on_source_id_and_source_type"
   end
 
+  create_table "spree_loyalty_points_transactions", force: :cascade do |t|
+    t.integer  "loyalty_points"
+    t.string   "type"
+    t.integer  "user_id",                    null: false
+    t.integer  "source_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "source_type"
+    t.integer  "balance",        default: 0, null: false
+    t.string   "comment"
+    t.string   "transaction_id"
+    t.index ["source_type", "source_id"], name: "by_source"
+    t.index ["type"], name: "index_spree_loyalty_points_transactions_on_type"
+    t.index ["user_id"], name: "index_spree_loyalty_points_transactions_on_user_id"
+  end
+
+  create_table "spree_marketing_campaigns", force: :cascade do |t|
+    t.string   "uid",            null: false
+    t.string   "mailchimp_type"
+    t.string   "name"
+    t.text     "stats"
+    t.integer  "list_id"
+    t.datetime "scheduled_at"
+    t.index ["list_id"], name: "index_spree_marketing_campaigns_on_list_id"
+    t.index ["mailchimp_type"], name: "index_spree_marketing_campaigns_on_mailchimp_type"
+  end
+
+  create_table "spree_marketing_contacts", force: :cascade do |t|
+    t.string   "mailchimp_id"
+    t.string   "uid",                         null: false
+    t.string   "email",                       null: false
+    t.boolean  "active",       default: true, null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+    t.index ["active", "email"], name: "index_spree_marketing_contacts_on_active_and_email"
+    t.index ["email"], name: "index_spree_marketing_contacts_on_email"
+  end
+
+  create_table "spree_marketing_contacts_lists", force: :cascade do |t|
+    t.integer  "contact_id"
+    t.integer  "list_id"
+    t.boolean  "active",     default: true, null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["active"], name: "index_spree_marketing_contacts_lists_on_active"
+    t.index ["contact_id"], name: "index_spree_marketing_contacts_lists_on_contact_id"
+    t.index ["list_id", "contact_id"], name: "index_spree_marketing_contacts_lists_on_list_id_and_contact_id"
+  end
+
+  create_table "spree_marketing_lists", force: :cascade do |t|
+    t.string   "uid",                             null: false
+    t.string   "name"
+    t.boolean  "active",           default: true, null: false
+    t.string   "type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "entity_type"
+    t.integer  "entity_id"
+    t.string   "searched_keyword"
+    t.datetime "deleted_at"
+    t.index ["active", "name"], name: "index_spree_marketing_lists_on_active_and_name"
+    t.index ["name"], name: "index_spree_marketing_lists_on_name"
+  end
+
+  create_table "spree_marketing_recipients", force: :cascade do |t|
+    t.integer  "campaign_id"
+    t.integer  "contact_id"
+    t.datetime "email_opened_at"
+    t.index ["campaign_id"], name: "index_spree_marketing_recipients_on_campaign_id"
+    t.index ["contact_id"], name: "index_spree_marketing_recipients_on_contact_id"
+  end
+
   create_table "spree_option_type_prototypes", force: :cascade do |t|
     t.integer "prototype_id"
     t.integer "option_type_id"
@@ -327,6 +434,7 @@ ActiveRecord::Schema.define(version: 20171114135718) do
     t.integer  "state_lock_version",                                               default: 0,       null: false
     t.decimal  "taxable_adjustment_total",                precision: 10, scale: 2, default: "0.0",   null: false
     t.decimal  "non_taxable_adjustment_total",            precision: 10, scale: 2, default: "0.0",   null: false
+    t.datetime "paid_at"
     t.index ["approver_id"], name: "index_spree_orders_on_approver_id"
     t.index ["bill_address_id"], name: "index_spree_orders_on_bill_address_id"
     t.index ["canceler_id"], name: "index_spree_orders_on_canceler_id"
@@ -339,6 +447,22 @@ ActiveRecord::Schema.define(version: 20171114135718) do
     t.index ["ship_address_id"], name: "index_spree_orders_on_ship_address_id"
     t.index ["store_id"], name: "index_spree_orders_on_store_id"
     t.index ["user_id", "created_by_id"], name: "index_spree_orders_on_user_id_and_created_by_id"
+  end
+
+  create_table "spree_page_events", force: :cascade do |t|
+    t.string   "actor_type"
+    t.integer  "actor_id"
+    t.string   "target_type"
+    t.integer  "target_id"
+    t.string   "activity"
+    t.text     "referrer"
+    t.string   "search_keywords"
+    t.string   "session_id"
+    t.text     "query_string"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.index ["actor_type", "actor_id"], name: "index_spree_page_events_on_actor_type_and_actor_id"
+    t.index ["target_type", "target_id"], name: "index_spree_page_events_on_target_type_and_target_id"
   end
 
   create_table "spree_payment_capture_events", force: :cascade do |t|
@@ -654,6 +778,8 @@ ActiveRecord::Schema.define(version: 20171114135718) do
     t.datetime "updated_at"
     t.integer  "stock_location_id"
     t.integer  "return_authorization_reason_id"
+    t.integer  "loyalty_points",                  default: 0, null: false
+    t.string   "loyalty_points_transaction_type"
     t.index ["return_authorization_reason_id"], name: "index_return_authorizations_on_return_authorization_reason_id"
   end
 
@@ -1076,6 +1202,8 @@ ActiveRecord::Schema.define(version: 20171114135718) do
     t.string   "confirmation_token"
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
+    t.integer  "loyalty_points_balance",             default: 0, null: false
+    t.integer  "lock_version",                       default: 0, null: false
     t.index ["bill_address_id"], name: "index_spree_users_on_bill_address_id"
     t.index ["deleted_at"], name: "index_spree_users_on_deleted_at"
     t.index ["email"], name: "email_idx_unique", unique: true
