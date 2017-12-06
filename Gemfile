@@ -39,7 +39,6 @@ gem 'jbuilder', '~> 2.5'
 gem "omniauth-salesforce"
 
 
-
 gem 'restforce', '~> 2.5.3'
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
