@@ -126,16 +126,6 @@ GIT
       spree_extension (~> 0.0.5)
 
 GIT
-  remote: https://github.com/vinsol-spree-contrib/spree_marketing.git
-  revision: 24d65530cbccacee38f4cf7ee44fcbb0f3f57428
-  branch: master
-  specs:
-    spree_marketing (3.2.0.alpha)
-      gibbon (~> 2.2.3)
-      spree_core (~> 3.2.0.alpha)
-      whenever (~> 0.9.4)
-
-GIT
   remote: https://github.com/vinsol-spree-contrib/spree_themes.git
   revision: 6321cd868ba0bb9ba0576b616a2511a0f172e519
   branch: 3-2-stable
@@ -276,9 +266,6 @@ GEM
     formatador (0.2.5)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
-    gibbon (2.2.5)
-      faraday (>= 0.9.1)
-      multi_json (>= 1.11.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     guard (2.14.1)
@@ -570,7 +557,6 @@ DEPENDENCIES
   spree_events_tracker!
   spree_gateway!
   spree_i18n!
-  spree_marketing!
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3

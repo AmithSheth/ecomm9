@@ -95,7 +95,6 @@ gem 'vinsol_spree_themes', github: 'vinsol-spree-contrib/spree_themes', branch: 
 
 
 
-gem 'spree_marketing', github: 'vinsol-spree-contrib/spree_marketing', branch: 'master'
 
 gem 'spree_events_tracker', github: 'vinsol-spree-contrib/spree_events_tracker', branch: '3-2-stable'
 

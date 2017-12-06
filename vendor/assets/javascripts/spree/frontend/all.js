@@ -13,6 +13,5 @@
 
 //= require spree/frontend/spree_admin_roles_and_access
 //= require spree/frontend/spree_themes
-//= require spree/frontend/spree_marketing
 //= require spree/frontend/spree_events_tracker
 //= require spree/frontend/spree_admin_insights
