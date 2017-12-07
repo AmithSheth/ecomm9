@@ -93,8 +93,7 @@ gem 'spree_admin_roles_and_access'
 
 gem 'vinsol_spree_themes', github: 'vinsol-spree-contrib/spree_themes', branch: '3-2-stable'
 
-
-
+gem 'spree_loyalty_points', github: 'vinsol-spree-contrib/spree-loyalty-points'
 
 gem 'spree_events_tracker', github: 'vinsol-spree-contrib/spree_events_tracker', branch: '3-2-stable'
 

@@ -117,6 +117,13 @@ GIT
       spree_core (~> 3.2.0.alpha)
 
 GIT
+  remote: https://github.com/vinsol-spree-contrib/spree-loyalty-points.git
+  revision: eeb356dc00c138caa38f96d43e53e55b06a54e9e
+  specs:
+    spree_loyalty_points (1.2.0)
+      spree_core (~> 3.2.0.rc2)
+
+GIT
   remote: https://github.com/vinsol-spree-contrib/spree_events_tracker.git
   revision: 4c0970ccb4e46330ce76aac5da779f728ba2713c
   branch: 3-2-stable
@@ -557,6 +564,7 @@ DEPENDENCIES
   spree_events_tracker!
   spree_gateway!
   spree_i18n!
+  spree_loyalty_points!
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
