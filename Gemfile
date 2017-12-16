@@ -46,6 +46,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 
 
 
+
 # Use Redis adapter to run Action Cable in production
 #gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -98,7 +99,5 @@ gem 'spree_loyalty_points', github: 'vinsol-spree-contrib/spree-loyalty-points'
 gem 'spree_events_tracker', github: 'vinsol-spree-contrib/spree_events_tracker', branch: '3-2-stable'
 
 gem 'spree_admin_insights'
-
-
 
 
