@@ -79,8 +79,7 @@ end
  gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: 'master'
  gem 'spree_i18n', github: 'spree/spree_i18n', branch: 'master' 
  gem 'spree_gateway', github: 'spree/spree_gateway'
-  
-  
+
   
 
 
