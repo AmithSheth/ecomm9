@@ -99,4 +99,4 @@ gem 'spree_events_tracker', github: 'vinsol-spree-contrib/spree_events_tracker',
 
 gem 'spree_admin_insights'
 
-gem 'spree_marketing', github: 'vinsol-spree-contrib/spree_marketing'
+
