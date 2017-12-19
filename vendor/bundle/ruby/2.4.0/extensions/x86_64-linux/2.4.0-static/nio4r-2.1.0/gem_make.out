@@ -1,5 +1,5 @@
 current directory: /home/e9consulting/cloud9/cloud9-store/vendor/bundle/ruby/2.4.0/gems/nio4r-2.1.0/ext/nio4r
-/home/e9consulting/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20171219-6498-gs4rte.rb extconf.rb
+/home/e9consulting/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20171219-28916-wl8gum.rb extconf.rb
 checking for unistd.h... yes
 checking for sys/select.h... yes
 checking for poll.h... yes
@@ -224,4 +224,4 @@ linking shared-object nio4r_ext.so
 
 current directory: /home/e9consulting/cloud9/cloud9-store/vendor/bundle/ruby/2.4.0/gems/nio4r-2.1.0/ext/nio4r
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20171219-6498-s7m39t
+/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20171219-28916-4a0mn0
