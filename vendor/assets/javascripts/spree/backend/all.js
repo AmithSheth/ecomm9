@@ -16,4 +16,7 @@
 //= require spree/backend/spree_events_tracker
 //= require spree/backend/spree_admin_insights
 //= require spree/backend/spree_loyalty_points
+<<<<<<< HEAD
+=======
 //= require spree/backend/spree_marketing
+>>>>>>> 56693e369fe9435d9cf763e4c990e53de486a1b1
