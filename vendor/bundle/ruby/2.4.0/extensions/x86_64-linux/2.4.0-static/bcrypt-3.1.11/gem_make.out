@@ -1,0 +1,19 @@
+current directory: /home/e9consulting/cloud9/cloud9-store/vendor/bundle/ruby/2.4.0/gems/bcrypt-3.1.11/ext/mri
+/home/e9consulting/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20171219-6498-n2de5n.rb extconf.rb
+creating Makefile
+
+current directory: /home/e9consulting/cloud9/cloud9-store/vendor/bundle/ruby/2.4.0/gems/bcrypt-3.1.11/ext/mri
+make "DESTDIR=" clean
+
+current directory: /home/e9consulting/cloud9/cloud9-store/vendor/bundle/ruby/2.4.0/gems/bcrypt-3.1.11/ext/mri
+make "DESTDIR="
+compiling bcrypt_ext.c
+compiling crypt.c
+compiling crypt_blowfish.c
+compiling crypt_gensalt.c
+compiling wrapper.c
+linking shared-object bcrypt_ext.so
+
+current directory: /home/e9consulting/cloud9/cloud9-store/vendor/bundle/ruby/2.4.0/gems/bcrypt-3.1.11/ext/mri
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20171219-6498-aylvme

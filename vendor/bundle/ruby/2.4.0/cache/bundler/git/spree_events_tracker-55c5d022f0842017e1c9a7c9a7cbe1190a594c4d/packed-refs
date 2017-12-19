@@ -1,0 +1,21 @@
+# pack-refs with: peeled fully-peeled 
+c5bf3ad5ada8f3009d12c4d1c758dc15eac84395 refs/heads/2-4-stable
+f47a732cf40bc6496dd6ff19c60fd97512e06e7c refs/heads/3-0-stable
+695a8dfcfc224e8be06017cb27130db999d6d67e refs/heads/3-1-stable
+b7f779765560c4c4110e0f0950c783b8c09bf10f refs/heads/3-2-alpha
+4c0970ccb4e46330ce76aac5da779f728ba2713c refs/heads/3-2-stable
+e091d66d9d12223d0777d0848afd535b0675653a refs/heads/3-3-stable
+e888ab17482a058d31364b6f2530b397d2305bae refs/heads/add-tracker
+76dc010b7090515f4a6aebb173855c2e917c2fb8 refs/heads/master
+ee3b7697fe5c87604b6af2d7d7d41b748f28ed55 refs/heads/report-scopes
+c0f7b2cbc132dc99740f18164a3b3f3e507fe3a5 refs/heads/spree-bump
+aaa15920e45fd80aff92a3e5081774e2c1395bd3 refs/heads/stabilise-3-1
+c5bf3ad5ada8f3009d12c4d1c758dc15eac84395 refs/tags/v2.4
+f47a732cf40bc6496dd6ff19c60fd97512e06e7c refs/tags/v3.0.0
+876fd3a2c4211ebf9c6aa924a6d8c47c28ab0348 refs/tags/v3.1.0
+50c27edaa392a1ac1fbd2c34aae630610f64001c refs/tags/v3.2-alpha
+87bdbfb1720e2a1748787e13838087b9fad8d319 refs/tags/v3.2.1
+^50286bbfa477670d0deee769544846ff58a5b484
+8a8a39f6bff4d93ff4e4cf7b1643791a5a2444e2 refs/tags/v3.2.2
+bd0a4463e0ddefa342dea758fdeed6794bad1fbf refs/tags/v3.3.0
+e091d66d9d12223d0777d0848afd535b0675653a refs/tags/v3.3.1

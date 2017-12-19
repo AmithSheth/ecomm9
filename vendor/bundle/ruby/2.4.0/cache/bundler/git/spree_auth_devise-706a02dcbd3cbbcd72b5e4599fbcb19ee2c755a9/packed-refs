@@ -1,0 +1,25 @@
+# pack-refs with: peeled fully-peeled 
+3e0ebc3ebf6efec428d21eb21a3e8811984c248e refs/heads/1-2-stable
+ba95589a85368297c844f096c2a0c121e5b08138 refs/heads/1-3-stable
+0181835fb6ac77a05191d26f6f32a0f4a548d851 refs/heads/2-0-stable
+632d03afb67bfa7a33a0fb34e60252aa6df32ac5 refs/heads/2-1-stable
+8f0a64715f3fc9a0ef05615144a2931bee7860b5 refs/heads/2-2-stable
+b3b63f1fa01e8ccce300b663f8405fd190d9d9ba refs/heads/2-3-stable
+5a3857f8745736de6a7d4030c4a2c0493a3eb574 refs/heads/2-4-stable
+1ac9dcc33049b185a0dd884c832583feb4b91890 refs/heads/3-0-stable
+c67f50eb317c5ff64f58c22ac46abd225e5223ed refs/heads/3-1-stable
+a85a9cb56fe11e628ce8ec20353e5438317f39de refs/heads/edge
+95f92d80ca52beae3efb6b464662b7d6182169e5 refs/heads/ember
+13c1769b212c32b77480dca5125d01d7cb66f864 refs/heads/fix-246
+ffa61c63dcf3c9cbea23e7554d98026f326e62a3 refs/heads/i18n
+ff81fc9917763997f916f16c23e68e2b4797040e refs/heads/master
+e8dc710b378bb9183c1e89d932823c04e144eb9f refs/heads/master_on_bootstrap
+50a68b041179d531d87a98a652c449fe5f31e488 refs/heads/phantomjs_2_1_1
+da5fc27809ccf8c0a45ef30e13c7dc8600cdced6 refs/heads/split_core
+4d1328c93fc5fcbfcb95eb0bd68057b1e8768bbb refs/tags/v3.0.5
+145a06354a39a7ceeea4ad93e39c63c1ecb13c52 refs/tags/v3.0.6
+b9eea8301fb9529b60caee2002787693c03f3b95 refs/tags/v3.1.0
+740ddfcb98b20f44fccdf61110a891c7673c407f refs/tags/v3.2.0
+c1a6249b990e807648534bac703ae4a42dd4159a refs/tags/v3.3.0
+ec2943fbb92c527ae8d5e03549fe8c0907346b5b refs/tags/v3.3.0.rc1
+14ddc467777f36f4397c29cbe85641600f334975 refs/tags/v3.3.1

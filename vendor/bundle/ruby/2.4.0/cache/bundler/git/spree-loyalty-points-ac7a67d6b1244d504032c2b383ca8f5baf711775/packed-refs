@@ -1,0 +1,13 @@
+# pack-refs with: peeled fully-peeled 
+05f7a9f09c0814e4496d045da888b68024379956 refs/heads/2-1-changes
+170e3c346f70277ae79425a0a5b175d37d445fc3 refs/heads/2-1-stable
+d1b8fdf3bb35a8bc456a0a63947a6f7bf692c189 refs/heads/2-2-stable
+09803a0855a4a6205b2b05c7d9f07076d409a20f refs/heads/3-0-stable
+90dba1938f41d7f6163c4f2f6a5119523ac0d844 refs/heads/3-1-stable
+eeb356dc00c138caa38f96d43e53e55b06a54e9e refs/heads/master
+89472e56beb94310bee32e726143f35166280360 refs/heads/split-payments-fixes
+65daea86246f792c42c9ff876b14c707003f1e87 refs/tags/1.0.0
+7b3df20986f6e504697e8ecda97819c5c03966d1 refs/tags/1.0.2
+170e3c346f70277ae79425a0a5b175d37d445fc3 refs/tags/1.0.3
+4bc1ba6c63bb62070aa0f3a4609207da7b383347 refs/tags/1.1.0
+d1b8fdf3bb35a8bc456a0a63947a6f7bf692c189 refs/tags/1.1.1

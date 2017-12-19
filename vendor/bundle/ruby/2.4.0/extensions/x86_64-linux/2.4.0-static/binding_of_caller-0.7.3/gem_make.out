@@ -1,0 +1,16 @@
+current directory: /home/e9consulting/cloud9/cloud9-store/vendor/bundle/ruby/2.4.0/gems/binding_of_caller-0.7.3/ext/binding_of_caller
+/home/e9consulting/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20171219-6498-6ygfcm.rb extconf.rb
+
+current directory: /home/e9consulting/cloud9/cloud9-store/vendor/bundle/ruby/2.4.0/gems/binding_of_caller-0.7.3/ext/binding_of_caller
+make "DESTDIR=" clean
+make: *** No rule to make target 'clean'.  Stop.
+
+current directory: /home/e9consulting/cloud9/cloud9-store/vendor/bundle/ruby/2.4.0/gems/binding_of_caller-0.7.3/ext/binding_of_caller
+make "DESTDIR="
+echo "Nada."
+Nada.
+
+current directory: /home/e9consulting/cloud9/cloud9-store/vendor/bundle/ruby/2.4.0/gems/binding_of_caller-0.7.3/ext/binding_of_caller
+make "DESTDIR=" install
+echo "Nada."
+Nada.
