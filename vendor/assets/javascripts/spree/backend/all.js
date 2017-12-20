@@ -16,4 +16,3 @@
 //= require spree/backend/spree_events_tracker
 //= require spree/backend/spree_admin_insights
 //= require spree/backend/spree_loyalty_points
-//= require spree/backend/spree_marketing

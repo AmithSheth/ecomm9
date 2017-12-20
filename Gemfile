@@ -71,8 +71,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'better_errors', '~> 2.4'
-  gem 'binding_of_caller', '~> 0.7.3'
+ 
 end
  # spree gem for shoping cart
  gem 'spree', github: 'spree/spree', branch: '3-2-stable'
@@ -104,4 +103,4 @@ gem 'spree_admin_insights'
 
 gem 'spree_admin_insights'
 
-gem 'spree_marketing', github: 'vinsol-spree-contrib/spree_marketing'
+

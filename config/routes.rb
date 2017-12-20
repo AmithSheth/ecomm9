@@ -25,4 +25,18 @@ resources :connections
           # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
  end
 
- 
+ Spree::Core::Engine.routes.draw do
+
+  namespace :admin do
+    namespace :marketing do
+      resources :lists, only: [:show, :index]
+      resources :campaigns, only: [:show, :index] do
+        member do
+          get :display_recipient_emails
+        end
+      end
+      post 'campaigns/sync', to: 'campaigns#sync'
+    end
+  end
+
+end
