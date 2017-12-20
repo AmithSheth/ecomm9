@@ -79,9 +79,12 @@ end
  gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: 'master'
  gem 'spree_i18n', github: 'spree/spree_i18n', branch: 'master' 
  gem 'spree_gateway', github: 'spree/spree_gateway'
+<<<<<<< HEAD
   
   
   
+=======
+>>>>>>> ee830484bba3370319a4adf9fe1e3b7b6d8ce961
 
 
 
@@ -98,4 +101,9 @@ gem 'spree_loyalty_points', github: 'vinsol-spree-contrib/spree-loyalty-points'
 
 gem 'spree_events_tracker', github: 'vinsol-spree-contrib/spree_events_tracker', branch: '3-2-stable'
 
+<<<<<<< HEAD
 gem 'spree_admin_insights'
+=======
+gem 'spree_admin_insights'
+
+>>>>>>> ee830484bba3370319a4adf9fe1e3b7b6d8ce961
