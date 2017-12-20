@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 GIT
   remote: https://github.com/spree-contrib/spree_active_shipping.git
   revision: 4b02432d179ae9fc1023ac29647c2f9b6edac833
@@ -581,4 +580,4 @@ RUBY VERSION
 
 BUNDLED WITH
    1.16.0
->>>>>>> ee830484bba3370319a4adf9fe1e3b7b6d8ce961
+
