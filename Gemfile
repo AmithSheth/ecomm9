@@ -104,3 +104,4 @@ gem 'spree_admin_insights'
 
 gem 'spree_admin_insights'
 
+gem 'spree_marketing', github: 'vinsol-spree-contrib/spree_marketing'
