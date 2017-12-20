@@ -1,0 +1,12 @@
+# pack-refs with: peeled fully-peeled 
+6321cd868ba0bb9ba0576b616a2511a0f172e519 refs/heads/3-2-stable
+009a4709504c71fe447c907aa2f24953f9cf2608 refs/heads/3-3-bump
+9fb385085a829a0f36385b2c1b028876e4c920fb refs/heads/3-3-stable
+f8d92562f4e2d89bb7148a19ffbfea3ad0558040 refs/heads/add-decorators
+caf77ffb83aa94d729789e09bf5bac2e33e754df refs/heads/db-storage
+a866a37c9bfdbc00abcf8c0eee6201f3569d0c87 refs/heads/develop
+d630cf47c5ecd75f348cc928dffc3eacd3371dca refs/heads/master
+e179e8510d691cc9e79c5d8767f75ca1890cb258 refs/heads/rspecs
+a2d0453bc502216e902f47bff543f87433591787 refs/tags/poc
+862ede0da7c379755c3a5f24cb96f63b0cd6ae0b refs/tags/v0.0.1
+^9cd7a3707fb7f9356463efa090426488a773d109

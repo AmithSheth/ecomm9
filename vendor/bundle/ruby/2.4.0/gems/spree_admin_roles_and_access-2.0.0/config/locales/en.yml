@@ -1,0 +1,19 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  spree:
+    new_role: "New Role"
+    edit_role: "Edit Role"
+    listing_roles: "Listing Roles"
+    roles: "Roles"
+    role_name: "Name"
+    role_editable: "Editable"
+    role_is_default: "Is default"
+    permissions: "Permissions"
+    save_changes: "Save Changes"
+    new_permission: "New Permission"
+    permission_title: "Title"
+    permission_priority: "Priority"
+    permission_visible: "Visible"
+    permission_boolean: "Boolean"

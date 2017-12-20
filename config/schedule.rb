@@ -18,9 +18,6 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
-
-
-every 1.day, :at => '12:01 am' do
-  rake 'spree_marketing:smart_list:generate'
-  rake 'spree_marketing:smart_list:campaign:sync'
-end
+<<<<<<< HEAD
+=======
+>>>>>>> 56693e369fe9435d9cf763e4c990e53de486a1b1
