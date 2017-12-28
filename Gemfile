@@ -101,6 +101,10 @@ gem 'spree_events_tracker', github: 'vinsol-spree-contrib/spree_events_tracker',
 
 gem 'spree_admin_insights'
 
-gem 'spree_admin_insights'
+gem 'spree_wallet', '2.0.6'
+
+ gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express'
+
+
 
 
