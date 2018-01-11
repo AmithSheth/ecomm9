@@ -43,8 +43,12 @@ gem 'restforce', '~> 2.5.3'
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 
+gem 'httparty'
 
+gem 'databasedotcom'
+gem 'databasedotcom-rails'
 
+gem 'rest-client'
 
 
 # Use Redis adapter to run Action Cable in production

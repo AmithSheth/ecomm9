@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+ get 'salesforce_accounts/index'
+
 resources :connections
 
   get 'connections', to: 'connections#index'
@@ -12,6 +14,8 @@ resources :connections
 
 
   get 'auth/salesforce/callback', to: 'salesforce#callback'
+
+  resources :salesforce_accounts
 
  
 
@@ -26,6 +30,8 @@ resources :connections
  end
 
  Spree::Core::Engine.routes.draw do
+
+  get 'tests/index'
 
   namespace :admin do
     namespace :marketing do
