@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
- get 'salesforce_accounts/index'
+
+
+  get 'sessions/create'
 
 resources :connections
 
@@ -13,11 +15,19 @@ resources :connections
   get 'salesforce_products/index'
 
 
+  
+
+
+
+  get 'accounts', to: 'accounts#index'
+
+  get 'accounts/create'
+
   get 'auth/salesforce/callback', to: 'salesforce#callback'
 
-  resources :salesforce_accounts
+  
 
- 
+  #get 'auth/forcedotcom/callback', to: 'sessions#create'
 
  # This line mounts Spree's routes at the root of your application.
   # This means, any requests to URLs such as /products, will go to Spree::ProductsController.
@@ -30,6 +40,8 @@ resources :connections
  end
 
  Spree::Core::Engine.routes.draw do
+
+  get 'sessions/create'
 
   get 'tests/index'
 

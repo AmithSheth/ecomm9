@@ -1,10 +1,10 @@
 development: &default
-  client_key: '3MVG9mclR62wycM2UgNrW2PlD3CD.Yfq3D6zOtwc6Jvo6ZOij3zh5Ymlx1dbR.oA0_eqUf7bFmRm50Lvi3.mb'
-  client_secret: '8398236160250672928' 
+  client_key: "3MVG9mclR62wycM2UgNrW2PlD3CD.Yfq3D6zOtwc6Jvo6ZOij3zh5Ymlx1dbR.oA0_eqUf7bFmRm50Lvi3.mb"
+  client_secret: "8398236160250672928"
 
 test:
   <<: *default
 
 production:
-  client_key: '3MVG9mclR62wycM2UgNrW2PlD3CD.Yfq3D6zOtwc6Jvo6ZOij3zh5Ymlx1dbR.oA0_eqUf7bFmRm50Lvi3.mb'
-  client_secret: '8398236160250672928'
+  client_key: "3MVG9mclR62wycM2UgNrW2PlD3CD.Yfq3D6zOtwc6Jvo6ZOij3zh5Ymlx1dbR.oA0_eqUf7bFmRm50Lvi3.mb"
+client_secret: "8398236160250672928"

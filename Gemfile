@@ -27,6 +27,19 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
 
+gem "omniauth-salesforce"
+
+gem "restforce"
+
+gem 'rest-client', '~> 2.0', '>= 2.0.2'
+
+gem 'omniauth'
+
+gem 'oauth2', '~> 1.2'
+
+gem 'dalli', '~> 2.7', '>= 2.7.6'
+
+
 
 
 # Use jquery as the JavaScript library
@@ -36,19 +49,18 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 
-gem "omniauth-salesforce"
 
 
-gem 'restforce', '~> 2.5.3'
+
+
 
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 
 gem 'httparty'
 
-gem 'databasedotcom'
-gem 'databasedotcom-rails'
 
-gem 'rest-client'
+
+
 
 
 # Use Redis adapter to run Action Cable in production

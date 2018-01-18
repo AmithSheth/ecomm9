@@ -1,0 +1,16 @@
+       <h1>Accounts</h1>
+
+<table class="table table-striped">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>AccountNumber<th>
+  </tr>
+  <% @accounts.each do |account| %>
+    <tr>
+      <td><%= account.Id %></td>
+      <td><%= account.Name %></td>
+      <td><%= account.AccountNumber %></td>
+    </tr>
+  <% end %>
+</table>

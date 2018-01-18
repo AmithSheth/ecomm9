@@ -2,7 +2,7 @@ module Spree
   module Api
     module V1
       class UsersController < Spree::Api::BaseController
-         include Databasedotcom::Rails::Controller
+         
         rescue_from Spree::Core::DestroyWithOrdersError, with: :error_during_processing
 
         def index
