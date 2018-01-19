@@ -10,7 +10,7 @@ class AccountsController < ApplicationController
   end
 
   def create
-   @account = @client.create( "Account", Name: "api-test", AccountNumber: "0000") 
+   @account = @client.create( "Account", Name: "test", AccountNumber: "0000") 
   end
 
 
