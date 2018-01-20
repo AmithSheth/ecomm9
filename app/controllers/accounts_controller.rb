@@ -1,7 +1,5 @@
-
-
 class AccountsController < ApplicationController
-  before_action :authenticate
+  
   before_action :initialize_client
   
 
@@ -10,7 +8,7 @@ class AccountsController < ApplicationController
   end
 
   def create
-   @account = @client.create( "Account", Name: "test", AccountNumber: "0000") 
+   @account = @client.create( "Account", Name: "E9test", AccountNumber: "0000") 
   end
 
 
@@ -22,12 +20,13 @@ class AccountsController < ApplicationController
 
   private
 
-  def authenticate
-    redirect_to connections_path if session['token'].blank?
-  end
+  
 
   def initialize_client
     @client = Restforce.new(
+      username: 'ecomm9@demo.com',
+      password: 'e9comm123',
+      security_token: 'VLtlja7BCgm8VteTUnAdIpeQ',
       oauth_token: session['token'],
       refresh_token: session['refresh_token'],
       instance_url: session['instance_url'],

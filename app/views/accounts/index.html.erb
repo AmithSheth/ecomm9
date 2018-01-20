@@ -4,12 +4,14 @@
   <tr>
     <th>Id</th>
     <th>Name</th>
-    <th>AccountNumber<th>
+    <th>Account Number</th>
+    
   </tr>
   <% @accounts.each do |account| %>
     <tr>
       <td><%= account.Id %></td>
       <td><%= account.Name %></td>
+      <td><%= account.AccountNumber %></td>
     </tr>
   <% end %>
 </table>

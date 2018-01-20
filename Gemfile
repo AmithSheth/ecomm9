@@ -31,16 +31,6 @@ gem "omniauth-salesforce"
 
 gem "restforce"
 
-gem 'rest-client', '~> 2.0', '>= 2.0.2'
-
-gem 'omniauth'
-
-gem 'oauth2', '~> 1.2'
-
-gem 'dalli', '~> 2.7', '>= 2.7.6'
-
-
-
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
