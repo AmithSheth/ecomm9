@@ -3,6 +3,7 @@ module Spree
     class UsersController < ResourceController
       rescue_from Spree::Core::DestroyWithOrdersError, with: :user_destroy_with_orders_error
       after_action :sign_in_if_change_own_password, only: :update
+      before_action :initialize_client
 
       def show
         redirect_to edit_admin_user_path(@user)
@@ -10,6 +11,7 @@ module Spree
 
       def create
         @user = Spree.user_class.new(user_params)
+        @account = @client.create( "Account", Name: "E9test", AccountNumber: "0000")
        
         if @user.save  
           flash.now[:success] = flash_message_for(@user, :successfully_created)
@@ -93,6 +95,20 @@ module Spree
                                       ship_address_attributes: permitted_address_attributes,
                                       bill_address_attributes: permitted_address_attributes])
       end
+
+      def initialize_client
+      @client = Restforce.new(
+      username: 'ecomm9@demo.com',
+      password: 'e9comm123',
+      security_token: 'VLtlja7BCgm8VteTUnAdIpeQ',
+      oauth_token: session['token'],
+      refresh_token: session['refresh_token'],
+      instance_url: session['instance_url'],
+      client_id: $salesforce_config['client_key'],
+      client_secret: $salesforce_config['client_secret'],
+      api_version: '41.0'
+    )
+end
       
     
 

@@ -7,9 +7,7 @@ class AccountsController < ApplicationController
     @accounts = @client.query("select Id, Name,AccountNumber from Account")
   end
 
-  def create
-   @account = @client.create( "Account", Name: "E9test", AccountNumber: "0000") 
-  end
+  
 
 
  
