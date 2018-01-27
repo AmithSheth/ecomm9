@@ -4,14 +4,24 @@
   <tr>
     <th>Id</th>
     <th>Name</th>
-    <th>Account Number</th>
+    <th>BillingStreet</th>
+    <th>BillingState</th>
+    <th>BillingCity</th>
+    <th>BillingCountry</th>
+    <th>BillingPostalCode</th>
+
     
   </tr>
   <% @accounts.each do |account| %>
     <tr>
       <td><%= account.Id %></td>
       <td><%= account.Name %></td>
-      <td><%= account.AccountNumber %></td>
+      
+     <td><%= account.BillingStreet %></td>
+     <td><%= account. BillingState%></td>
+     <td><%= account. BillingCity%></td>
+     <td><%= account. BillingCountry%></td>
+     <td><%= account. BillingPostalCode%></td>
     </tr>
   <% end %>
 </table>

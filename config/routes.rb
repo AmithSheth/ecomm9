@@ -25,6 +25,10 @@ resources :connections
 
   get 'auth/salesforce/callback', to: 'salesforce#callback'
 
+ 
+
+ 
+
   
 
   #get 'auth/forcedotcom/callback', to: 'sessions#create'

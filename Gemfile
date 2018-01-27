@@ -53,6 +53,7 @@ gem 'httparty'
 
 
 
+
 # Use Redis adapter to run Action Cable in production
 #gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -109,7 +110,11 @@ gem 'spree_admin_insights'
 
 gem 'spree_wallet', '2.0.6'
 
- gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express'
+gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express'
+
+gem 'spree_contact_us', :git => 'https://github.com/spree-contrib/spree_contact_us'
+
+
 
 
 

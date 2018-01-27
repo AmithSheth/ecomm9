@@ -4,6 +4,8 @@ module Spree
       rescue_from Spree::Core::DestroyWithOrdersError, with: :user_destroy_with_orders_error
       after_action :sign_in_if_change_own_password, only: :update
       before_action :initialize_client
+      
+
 
       def show
         redirect_to edit_admin_user_path(@user)
@@ -11,7 +13,6 @@ module Spree
 
       def create
         @user = Spree.user_class.new(user_params)
-        @account = @client.create( "Account", Name: "E9test", AccountNumber: "0000")
        
         if @user.save  
           flash.now[:success] = flash_message_for(@user, :successfully_created)
@@ -29,15 +30,26 @@ module Spree
         end
 
         if @user.update_attributes(user_params)
-          flash.now[:success] = Spree.t(:account_updated)
+           flash.now[:success] = Spree.t(:account_updated)
+
         end
 
         render :edit
       end
 
+     
+
       def addresses
         if request.put?
           if @user.update_attributes(user_params)
+             @account = @client.create("Account", Name: @user.bill_address.firstname + " " + @user.bill_address.lastname, BillingStreet: @user.bill_address.address1 + " " + @user.bill_address.address2, ShippingStreet:  @user.ship_address.address1 + " " + @user.ship_address.address2, 
+              BillingState: @user.bill_address.state, ShippingState: @user.ship_address.state, BillingCity: @user.bill_address.city, ShippingCity: @user.ship_address.city, 
+              BillingCountry: @user.bill_address.country, ShippingCountry: @user.ship_address.country, 
+              BillingPostalCode: @user.bill_address.zipcode, ShippingPostalCode: @user.ship_address.zipcode,
+              Phone: @user.bill_address.phone)
+              @contact = @client.create("Contact", AccountId: @account, LastName: @user.bill_address.lastname, Phone: @user.bill_address.phone)
+
+            
             flash.now[:success] = Spree.t(:account_updated)
           end
 
@@ -109,8 +121,8 @@ module Spree
       api_version: '41.0'
     )
 end
-      
-    
+
+     
 
       # handling raise from Spree::Admin::ResourceController#destroy
       def user_destroy_with_orders_error

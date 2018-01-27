@@ -4,10 +4,14 @@ class AccountsController < ApplicationController
   
 
   def index
-    @accounts = @client.query("select Id, Name,AccountNumber from Account")
+    @accounts = @client.query("select Id, Name,AccountNumber,BillingStreet, BillingState, BillingCity, BillingCountry, BillingPostalCode
+
+  from Account")
   end
 
-  
+  def create
+    
+  end
 
 
  
