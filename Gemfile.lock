@@ -296,8 +296,6 @@ GEM
     hashie (3.5.7)
     highline (1.6.21)
     htmlentities (4.3.4)
-    httparty (0.15.6)
-      multi_xml (>= 0.5.2)
     i18n (0.9.1)
       concurrent-ruby (~> 1.0)
     i18n_data (0.8.0)
@@ -560,7 +558,6 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
   guard
-  httparty
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
