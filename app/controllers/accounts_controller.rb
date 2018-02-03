@@ -10,7 +10,7 @@ class AccountsController < ApplicationController
   end
 
   def create
-    
+   
   end
 
 

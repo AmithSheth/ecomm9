@@ -25,7 +25,6 @@ resources :connections
 
   get 'auth/salesforce/callback', to: 'salesforce#callback'
 
- 
 
  
 
@@ -62,3 +61,5 @@ resources :connections
   end
 
 end
+
+
