@@ -6,9 +6,7 @@ class Spree::ContactUs::ContactsController < Spree::StoreController
     @lead = @client.create("Lead", LastName: @contact.name, Company: "E9 Consulting", Email: @contact.email, Description: @contact.subject+ " : " + @contact.message)
 
     if @contact.save
-      if Spree::ContactUs::Config.contact_tracking_message.present?
-        flash[:contact_tracking] = Spree::ContactUs::Config.contact_tracking_message
-      end
+     
       redirect_to(spree.root_path, :notice => Spree.t('contact_us.notices.success'))
     else
       render :new
