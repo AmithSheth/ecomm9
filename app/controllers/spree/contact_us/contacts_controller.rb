@@ -3,7 +3,7 @@ class Spree::ContactUs::ContactsController < Spree::StoreController
   helper "spree/products"
   def create
     @contact = Spree::ContactUs::Contact.new(params[:contact_us_contact])
-    @lead = @client.create("Lead", LastName: @contact.name, Company: "E9 Consulting", Email: @contact.email, Description: @contact.subject+ " : " + @contact.message)
+    
 
     if @contact.save
      
