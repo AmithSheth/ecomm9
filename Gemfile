@@ -114,7 +114,7 @@ gem 'spree_paypal_express', github: 'spree-contrib/better_spree_paypal_express'
 
 gem 'spree_contact_us', :git => 'https://github.com/spree-contrib/spree_contact_us'
 
-
+gem 'spree_multi_currency', github: 'spree-contrib/spree_multi_currency'
 
 
 

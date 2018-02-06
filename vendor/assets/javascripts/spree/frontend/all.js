@@ -17,3 +17,4 @@
 //= require spree/frontend/spree_admin_insights
 //= require spree/frontend/spree_loyalty_points
 //= require spree/frontend/spree_paypal_express
+//= require spree/frontend/spree_multi_currency
