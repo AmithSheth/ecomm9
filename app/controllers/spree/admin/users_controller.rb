@@ -48,7 +48,7 @@ module Spree
               BillingPostalCode: @user.bill_address.zipcode, ShippingPostalCode: @user.ship_address.zipcode,
               Phone: @user.bill_address.phone)
               @contact = @client.create("Contact", AccountId: @account, LastName: @user.bill_address.lastname, Phone: @user.bill_address.phone)
-
+              
             
             flash.now[:success] = Spree.t(:account_updated)
           end

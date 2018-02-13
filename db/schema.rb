@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180124134922) do
+ActiveRecord::Schema.define(version: 20180212103308) do
 
   create_table "accounts", force: :cascade do |t|
     t.datetime "created_at",    null: false
@@ -597,7 +597,7 @@ ActiveRecord::Schema.define(version: 20180124134922) do
   end
 
   create_table "spree_products", force: :cascade do |t|
-    t.string   "name",                 default: "",   null: false
+    t.string   "name",                 default: "",    null: false
     t.text     "description"
     t.datetime "available_on"
     t.datetime "deleted_at"
@@ -606,11 +606,13 @@ ActiveRecord::Schema.define(version: 20180124134922) do
     t.string   "meta_keywords"
     t.integer  "tax_category_id"
     t.integer  "shipping_category_id"
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
     t.boolean  "promotionable",        default: true
     t.string   "meta_title"
     t.datetime "discontinue_on"
+    t.boolean  "returnable",           default: false
+    t.integer  "return_time",          default: 0,     null: false
     t.index ["available_on"], name: "index_spree_products_on_available_on"
     t.index ["deleted_at"], name: "index_spree_products_on_deleted_at"
     t.index ["discontinue_on"], name: "index_spree_products_on_discontinue_on"
@@ -796,8 +798,9 @@ ActiveRecord::Schema.define(version: 20180124134922) do
     t.datetime "updated_at"
     t.integer  "stock_location_id"
     t.integer  "return_authorization_reason_id"
-    t.integer  "loyalty_points",                  default: 0, null: false
+    t.integer  "loyalty_points",                  default: 0,     null: false
     t.string   "loyalty_points_transaction_type"
+    t.boolean  "user_initiated",                  default: false
     t.index ["return_authorization_reason_id"], name: "index_return_authorizations_on_return_authorization_reason_id"
   end
 
