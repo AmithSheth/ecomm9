@@ -116,7 +116,7 @@ gem 'spree_contact_us', :git => 'https://github.com/spree-contrib/spree_contact_
 
 gem 'spree_multi_currency', github: 'spree-contrib/spree_multi_currency'
 
-
+gem 'spree_item_returns' , github: 'vinsol-spree-contrib/spree_item_returns'
 
 
 

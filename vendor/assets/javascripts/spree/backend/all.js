@@ -18,3 +18,4 @@
 //= require spree/backend/spree_loyalty_points
 //= require spree/backend/spree_paypal_express
 //= require spree/backend/spree_multi_currency
+//= require spree/backend/spree_item_returns
