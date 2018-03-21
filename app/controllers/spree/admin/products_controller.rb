@@ -32,8 +32,7 @@ module Spree
         if @object.update_attributes(permitted_resource_params)
             
            @product2 = @client.create("Product2", Name: @product.name, StockKeepingUnit: @product.sku, Description: @product.description, IsActive: true)
-           @price_book2 = @client.create("Pricebook2", Name: "Spree Standard Price", IsActive: true)
-           @price_book_entry = @client.create("PricebookEntry", UnitPrice: 33, Pricebook2Id: '01s1N0000084x0B', Product2Id: '01t1N00000F49eK', IsActive: true)
+          
          
 
           invoke_callbacks(:update, :after)
