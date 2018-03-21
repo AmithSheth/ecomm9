@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
 
 
+ get 'exchange_product', to: 'spree/exchange_products#show'
+
   get 'sessions/create'
 
 resources :connections
@@ -47,6 +49,8 @@ resources :connections
 
 
  Spree::Core::Engine.routes.draw do
+
+  
 
   get 'sessions/create'
 

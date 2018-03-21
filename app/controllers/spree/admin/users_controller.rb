@@ -47,6 +47,9 @@ module Spree
               BillingCountry: @user.bill_address.country, ShippingCountry: @user.ship_address.country, 
               BillingPostalCode: @user.bill_address.zipcode, ShippingPostalCode: @user.ship_address.zipcode,
               Phone: @user.bill_address.phone)
+
+
+
               @contact = @client.create("Contact", AccountId: @account, LastName: @user.bill_address.lastname, Phone: @user.bill_address.phone)
               
             
@@ -112,7 +115,7 @@ module Spree
       @client = Restforce.new(
       username: 'ecomm9@demo.com',
       password: 'e9comm123',
-      security_token: 'VLtlja7BCgm8VteTUnAdIpeQ',
+      security_token: 'VB9eReYSM0j1Lbom0uWDBCN9',
       oauth_token: session['token'],
       refresh_token: session['refresh_token'],
       instance_url: session['instance_url'],
@@ -120,7 +123,7 @@ module Spree
       client_secret: $salesforce_config['client_secret'],
       api_version: '41.0'
     )
-end
+    end
 
      
 

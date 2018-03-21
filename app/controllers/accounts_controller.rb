@@ -28,7 +28,7 @@ class AccountsController < ApplicationController
     @client = Restforce.new(
       username: 'ecomm9@demo.com',
       password: 'e9comm123',
-      security_token: 'VLtlja7BCgm8VteTUnAdIpeQ',
+      security_token: 'VB9eReYSM0j1Lbom0uWDBCN9',
       oauth_token: session['token'],
       refresh_token: session['refresh_token'],
       instance_url: session['instance_url'],
