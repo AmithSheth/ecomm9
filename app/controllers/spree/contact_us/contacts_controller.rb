@@ -3,7 +3,10 @@ class Spree::ContactUs::ContactsController < Spree::StoreController
   helper "spree/products"
   def create
     @contact = Spree::ContactUs::Contact.new(params[:contact_us_contact])
-   @lead = @client.create("Lead", LastName: @contact.name, Company: "E9 Consulting", Email: @contact.email, Description: @contact.subject+ " : " + @contact.message)
+  
+   #@lead_update = @client.update("Lead", Id:  @leadId, LastName: @contact.name, Company: "E9 Consulting", Email: @contact.email, Description: @contact.subject+ " : " + @contact.message)
+   
+    @lead = @client.create("Lead", LastName: @contact.name, Company: "E9 Consulting", Email: @contact.email, Description: @contact.subject+ " : " + @contact.message)
 
     if @contact.save
      
@@ -26,8 +29,6 @@ class Spree::ContactUs::ContactsController < Spree::StoreController
 
  def initialize_client
       @client = Restforce.new(
-      username: 'ecomm9@demo.com',
-      password: 'e9comm123',
       security_token: 'VB9eReYSM0j1Lbom0uWDBCN9',
       oauth_token: session['token'],
       refresh_token: session['refresh_token'],

@@ -48,7 +48,7 @@ module Spree
               BillingPostalCode: @user.bill_address.zipcode, ShippingPostalCode: @user.ship_address.zipcode,
               Phone: @user.bill_address.phone)
 
-
+            
 
               @contact = @client.create("Contact", AccountId: @account, LastName: @user.bill_address.lastname, Phone: @user.bill_address.phone)
               
@@ -113,8 +113,6 @@ module Spree
 
       def initialize_client
       @client = Restforce.new(
-      username: 'ecomm9@demo.com',
-      password: 'e9comm123',
       security_token: 'VB9eReYSM0j1Lbom0uWDBCN9',
       oauth_token: session['token'],
       refresh_token: session['refresh_token'],

@@ -157,8 +157,6 @@ module Spree
 
       def initialize_client
       @client = Restforce.new(
-      username: 'ecomm9@demo.com',
-      password: 'e9comm123',
       security_token: 'VB9eReYSM0j1Lbom0uWDBCN9',
       oauth_token: session['token'],
       refresh_token: session['refresh_token'],
@@ -167,7 +165,7 @@ module Spree
       client_secret: $salesforce_config['client_secret'],
       api_version: '41.0'
     )
-    end
+      end
 
       private
 

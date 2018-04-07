@@ -23,5 +23,10 @@ Spree.config do |config|
   
 end
 
+Restforce.configure do |config|
+      config.username = 'ecomm9@demo.com',
+      config.password = 'e9comm123'
+end
+
 Spree.user_class = "Spree::User"
 
